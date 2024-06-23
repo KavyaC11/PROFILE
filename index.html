@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kavya Choudhary</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header class="header" id="header">
+      <nav class="nav cont">
+        <a href="#" class="nav__logo">Kavya</a>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list grid">
+            <li class="nav__item">
+              <a href="#home" class="nav__link">
+                <i class="fa-solid fa-house nav__icon"></i>Home
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">
+                <i class="fa-solid fa-user nav__icon"></i>About
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#skills" class="nav__link">
+                <i class="fa-solid fa-code nav__icon"></i>Skills
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link"
+                ><i class="fa-solid fa-comments nav__icon"></i>Contact</a
+              >
+            </li>
+          </ul>
+          <i class="fa-solid fa-xmark nav__close hide" id="nav-close"></i>
+        </div>
+        <div class="nav__btns">
+          <i class="fa-regular fa-moon change-theme" id="theme-button"></i>
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- MAIN BODY -->
+    <main>
+      <section class="home section" id="home">
+        <div class="home__container grid cont">
+          <div class="home__content grid">
+            <div class="home__social">
+              <a
+                href="https://www.linkedin.com/in/kavya-choudhary-83951a2aa/"
+                class="home__social-icon"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/kavya_choudhary08/?igsh=MTJlYng3djVwNHhwZQ%3D%3D"
+                class="home__social-icon"
+                target="_blank"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a
+                href="https://github.com/KavyaC11"
+                class="home__social-icon"
+                target="_blank"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </div>
+            <div class="home__img">
+              <img src="profile.png" alt="" class="home__blob">
+              <!-- <svg
+                class="home__blob"
+                viewBox="0 0 200 200"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill="#6E57E0"
+                  d="M44.3,24.2C31.1,48.4,-24,47,-38.4,22.2C-52.7,-2.7,-26.4,-51.1,1.2,-50.4C28.7,-49.7,57.5,0,44.3,24.2Z"
+                  transform="translate(100 100)"
+                />
+              </svg> -->
+            </div>
+            <div class="home__data">
+              <div class="home__data">
+                <h1 class="home__title">
+                  Hi,<br />I am
+                  <span
+                    class="home__title-color"
+                    style="color: var(--first-color)"
+                    >Kavya</span
+                  ><br />
+                  <span>I am passionate about</span><br />
+                  <span id="element" style="color: var(--first-color)"></span>
+                </h1>
+              </div>
+              <p class="home__desc"></p>
+              <a href="#contact" class="button button--flex">
+                Contact Me <i class="fa-regular fa-comment button__icon"></i>
+              </a>
+            </div>
+          </div>
+          <div class="home__scroll">
+            <a href="#about" class="home__scroll-button button--flex">
+              <span class="home__scroll-mouse">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  height="24"
+                  color="#000000"
+                  fill="none"
+                >
+                  <path
+                    d="M13.5 2L13.5 6M13.5 10L13.5 12"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M5 2C3.94531 3.13158 3.23544 4.50113 3 6"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M12 7.5C12 7.03406 12 6.80109 12.0761 6.61732C12.1776 6.37229 12.3723 6.17761 12.6173 6.07612C12.8011 6 13.0341 6 13.5 6C13.9659 6 14.1989 6 14.3827 6.07612C14.6277 6.17761 14.8224 6.37229 14.9239 6.61732C15 6.80109 15 7.03406 15 7.5V8.5C15 8.96594 15 9.19891 14.9239 9.38268C14.8224 9.62771 14.6277 9.82239 14.3827 9.92388C14.1989 10 13.9659 10 13.5 10C13.0341 10 12.8011 10 12.6173 9.92388C12.3723 9.82239 12.1776 9.62771 12.0761 9.38268C12 9.19891 12 8.96594 12 8.5V7.5Z"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                  />
+                  <path
+                    d="M6.24061 17.0888C6.43047 19.4803 8.32417 21.511 10.765 21.8118C11.6626 21.9223 12.5752 22 13.5 22C14.4247 22 15.3373 21.9223 16.2349 21.8118C18.6758 21.511 20.5694 19.4803 20.7593 17.0888C20.8909 15.4317 21 13.732 21 12C21 10.268 20.8909 8.56832 20.7593 6.91118C20.5694 4.51965 18.6758 2.48893 16.2349 2.1882C15.3373 2.07762 14.4247 2 13.5 2C12.5752 2 11.6626 2.07762 10.765 2.1882C8.32417 2.48893 6.43047 4.51965 6.24061 6.91118C6.10903 8.56832 6 10.268 6 12C6 13.732 6.10903 15.4317 6.24061 17.0888Z"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                  />
+                </svg>
+              </span>
+              <span class="home__scroll-name">Scroll down</span>
+              <i class="fa-solid fa-angles-down home__scroll-arrow"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="about section" id="about">
+        <h2 class="sec__title">About Me</h2>
+        <span class="sec__sub">Introduction</span>
+        <div class="about__container grid cont">
+          <img src="profile.png" alt="" class="about__img" />
+          <div class="about__data">
+            <p class="about__descp"> I am currently doing B.Tech in Computer Science and Engineering at IIT Guwahat.A zest for challenges and my educational background has instilled in me the qualities to go against all odds and achieve what I truly desire.</p>
+            <div class="about__info">
+              <div>
+                <span class="about__info-title">03+<br /></span>
+                <span class="about__info-name">Years<br />Experience</span>
+              </div>
+              <div>
+                <span class="about__info-title">07+<br /></span>
+                <span class="about__info-name">Projects<br />Completed</span>
+              </div>
+              <div>
+                <span class="about__info-title">04+<br /></span>
+                <span class="about__info-name">Active<br />Projects</span>
+              </div>
+            </div>
+            <div class="about__buttons">
+              <a href="#" class="button button--flex"
+                >Download CV
+                <i class="fa-solid fa-download button__icon"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="skills section" id="skills">
+        <h2 class="sec__title">Skills</h2>
+        <span class="sec__sub">Technical level</span>
+        <div class="skills__cont cont grid">
+         
+            <div class="skills__content close">
+              <div class="skills__header">
+                <svg
+                  class="skills__icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  height="24"
+                  color="#000000"
+                  fill="none"
+                >
+                  <path
+                    d="M18 21C19.2322 21 20.231 19.8487 20.231 18.4286C20.231 16.1808 20.1312 14.6865 21.6733 12.9091C22.1089 12.407 22.1089 11.593 21.6733 11.0909C20.1312 9.31354 20.231 7.81916 20.231 5.57143C20.231 4.15127 19.2322 3 18 3"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M6 21C4.76784 21 3.76897 19.8487 3.76897 18.4286C3.76897 16.1808 3.86877 14.6865 2.32673 12.9091C1.89109 12.407 1.89109 11.593 2.32673 11.0909C3.83496 9.35251 3.76897 7.83992 3.76897 5.57143C3.76897 4.15127 4.76784 3 6 3"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <div class="content" class="content">
+                  <h1 class="skills__title">Frontend Web Development</h1>
+                  <span class="skills__subtitle">2 years</span>
+                </div>
+                <i class="fa-solid fa-angle-down skills__arrow"></i>
+              </div>
+              <div class="skill__list grid">
+                <div class="list">
+                  <h3 class="skill__name">HTML</h3>
+                  <span class="details">Proficient</span>
+                </div>
+                <div class="list">
+                  <h3 class="skill__name">CSS</h3>
+                  <span class="details">Proficient</span>
+                </div>
+                <div class="list">
+                  <h3 class="skill__name">JavaScript</h3>
+                  <span class="details">Elementary Proficiency</span>
+                </div>
+              </div>
+            </div>
+            <div class="skills__content close">
+              <div class="skills__header">
+                <i class="fa-solid fa-laptop-code skills__icon"></i>
+                <div class="content">
+                  <h1 class="skills__title">Programming Skills</h1>
+                  <span class="skills__subtitle">2 years</span>
+                </div>
+                <i class="fa-solid fa-angle-down skills__arrow"></i>
+              </div>
+              <div class="skill__list grid">
+                <div class="list">
+                  <h3 class="skill__name">C++</h3>
+                  <span class="details">Elementary Proficiency</span>
+                </div>
+                <div class="list">
+                  <h3 class="skill__name">Java</h3>
+                  <span class="details">Elementary Proficiency</span>
+                </div>
+                <div class="list">
+                  <h3 class="skill__name">C</h3>
+                  <span class="details">Elementary Proficiency</span>
+                </div>
+              </div>
+            </div>
+            <div class="skills__content close">
+              <div class="skills__header">
+                <i class="fa-brands fa-python skills__icon"></i>
+                <div class="content">
+                  <h1 class="skills__title">Machine Learning and AI</h1>
+                  <span class="skills__subtitle">1 year</span>
+                </div>
+                <i class="fa-solid fa-angle-down skills__arrow"></i>
+              </div>
+              <div class="skill__list grid">
+                <div class="list">
+                  <h3 class="skill__name">Python</h3>
+                  <span class="details">Proficient</span>
+                </div>
+                <div class="list">
+                  <h3 class="skill__name">Data Analysis</h3>
+                  <span class="details">Elementary Proficiency</span>
+                </div>
+                <!-- <div class="list">
+                  <h3 class="skill__name">JavaScipt</h3>
+                  <span class="details">Elementary Proficiency</span>
+                </div> -->
+              </div>
+            
+          </div>
+        </div>
+      </section>
+      <section class="section quali">
+        <h2 class="sec__title">Qualifications</h2>
+        <span class="sec__sub">Educational Background</span>
+        <div class="quali__cont cont">
+          <div class="quali__tabs">
+            <div
+              class="quali___btn button--flex qactive"
+              data-target="#Education"
+            >
+              <i class="fa-solid fa-graduation-cap qicon"></i>
+              Education
+            </div>
+            <div class="quali___btn button--flex" data-target="#Work">
+              <i class="fa-solid fa-building qicon"></i>
+              Work
+            </div>
+          </div>
+          <div class="qsec">
+            <div class="qcont qactive" data-content id="Education">
+              <div class="qdata">
+                <div>
+                  <h3 class="qtitle">SMRJ</h3>
+                  <span class="qsub">Student</span>
+                  <div class="qcal">
+                    <i class="fa-regular fa-calendar-days"></i>
+                    2011-2023
+                  </div>
+                </div>
+                <div>
+                  <span class="qround"></span>
+                  <span class="qline"></span>
+                </div>
+              </div>
+              <div class="qdata">
+                <div></div>
+                <div>
+                  <span class="qround"></span>
+                  <span class="qline"></span>
+                </div>
+                <div>
+                  <h3 class="qtitle">SMRJ</h3>
+                  <span class="qsub">Student</span>
+                  <div class="qcal">
+                    <i class="fa-regular fa-calendar-days"></i>
+                    2011-2023
+                  </div>
+                </div>
+              </div>
+              <div class="qdata">
+                <div>
+                  <h3 class="qtitle">IITG</h3>
+                  <span class="qsub">Student</span>
+                  <div class="qcal">
+                    <i class="fa-regular fa-calendar-days"></i>
+                    2023-2027
+                  </div>
+                </div>
+                <div>
+                  <span class="qround"></span>
+                  <!-- <span class="qline"></span> -->
+                </div>
+              </div>
+            </div>
+            <div class="qcont" data-content id="Work">
+              <h3 class="center">None as of now</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section contact" id="contact">
+        <h2 class="sec__title">Contact Me</h2>
+        <span class="sec__sub">Let's get in touch!</span>
+        <div class="contact__cont cont grid">
+          <div class="details grid">
+            <div class="info">
+              <div class="extra_div">
+                <i class="fa-solid fa-phone cicon"></i>
+                <h3 class="what">Call me</h3>
+              </div>
+              <div class="cinfo">+91-6428961852</div>
+            </div>
+            <div class="info">
+              <div class="extra_div">
+                <i class="fa-solid fa-envelope cicon"></i>
+                <h3 class="what">Email</h3>
+              </div>
+              <div class="cinfo">kavya@gmail.com</div>
+            </div>
+            <div class="info">
+              <div class="extra_div">
+                <i class="fa-solid fa-location-dot cicon"></i>
+                <h3 class="what">Location</h3>
+              </div>
+              <div class="cinfo">IITG, Assam,India</div>
+            </div>
+          </div>
+          <form action="#" class="contactform grid">
+            <div class="cinput grid">
+              <div class="ccont">
+                <label for="" class="clabel">Name</label>
+                <input type="text" class="cinp" />
+              </div>
+              <div class="ccont">
+                <label for="" class="clabel">Email</label>
+                <input type="email" class="cinp" />
+              </div>
+            </div>
+            <div class="ccont">
+              <label for="" class="clabel">Project</label>
+              <input type="text" class="cinp" />
+            </div>
+            <div class="ccont">
+              <label for="" class="clabel">Message</label>
+              <textarea name="" id="" cols="0" rows="7" class="cinp"></textarea>
+            </div>
+            <div>
+              <a href="" class="button button--flex"
+                >Send Message
+                <i class="fa-regular fa-paper-plane button__icon"></i>
+              </a>
+            </div>
+          </form>
+        </div>
+        
+      </section>
+    </main>
+    <footer class="footer">
+      <h2 class="footer__title">Kavya Choudhary</h2>
+      <div class="footer__social">
+        <a href="" class="footer__icon"><i class="fa-brands fa-linkedin"></i></a>
+        <a
+          href="https://www.instagram.com/kavya_choudhary08?igsh=MTJlYng3djVwNHhwZQ=="
+          class="footer__icon"
+          ><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://github.com/KavyaC11" class="footer__icon"
+          ><i class="fa-brands fa-github"></i></a>
+      </div>
+      <p class="footer__copy">&#169; All rigths reserved</p>
+    </footer>
+  </body>
+  <!-- Load library from the CDN -->
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+  <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed("#element", {
+      strings: ["Web Development", "Video Editing", "Graphic Designing"],
+      typeSpeed: 100,
+      loop: true,
+    });
+  </script>
+  <script src="script.js"></script>
+</html>
